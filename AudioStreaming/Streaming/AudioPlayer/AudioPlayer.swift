@@ -108,7 +108,7 @@ open class AudioPlayer {
     private var stateBeforePaused: InternalState = .initial
 
     /// The underlying `AVAudioEngine` object
-    private let audioEngine = AVAudioEngine()
+    public let audioEngine = AVAudioEngine()
     /// An `AVAudioUnit` object that represents the audio player
     private(set) var player = AVAudioUnit()
     /// An `AVAudioUnitTimePitch` that controls the playback rate of the audio engine
